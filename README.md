@@ -27,4 +27,5 @@
 
 ### 8- Crie um usuário sem utilizar o comando useradd ou adduser, aqui você terá que criá-lo adicionado toda info necessária diretamente no arquivo responsável e terá que criar os diretórios necessários manualmente.
 
-## Observar sempre a primeira linha dos arquivos com os trechos de saída/configuração presente nos diretórios abaixo.
+#### Observar sempre a primeira linha dos arquivos com os trechos de saída/configuração presente nos diretórios abaixo.
+#### OBS: O comando apt-get upgrade -y não produziu efeito sobre o arquivo /var/log/apt/history.log pois durante a instalação todos os pacotes foram atualizados
