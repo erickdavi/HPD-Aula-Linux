@@ -26,3 +26,5 @@
 ### 7- Crie um arquivo e modifique a permissão para -r-xr—r-- utilizando o modo simbolico.
 
 ### 8- Crie um usuário sem utilizar o comando useradd ou adduser, aqui você terá que criá-lo adicionado toda info necessária diretamente no arquivo responsável e terá que criar os diretórios necessários manualmente.
+
+## Observar sempre a primeira linha dos arquivos com os trechos de saída/configuração presente nos diretórios abaixo.
