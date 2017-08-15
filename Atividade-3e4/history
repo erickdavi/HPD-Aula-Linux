@@ -1,0 +1,3 @@
+    1  vim /etc/skel/.bashrc 
+    2  cat /etc/skel/.bashrc > /home/*/.bashrc
+    3  source /home/*/.bashrc

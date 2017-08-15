@@ -1,0 +1,4 @@
+   12  mkdir file1 file2
+   13  chmod 755 file1
+   14  chmod a=r,u+x file1
+   15  history >history

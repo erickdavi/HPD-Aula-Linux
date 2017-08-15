@@ -1,0 +1,36 @@
+0 - history -c
+
+1 - 
+cat /proc/mounts > mounts
+cat /etc/fstab > fstab
+df -h > freedisk
+
+2 -
+apt-get install -y bb apache2 python3 python3-pip git
+tail /var/log/apt/history.log
+
+3 - 
+
+4 - 
+echo "alias lista_processos=\"ps -ef\"" >> /etc/skel/.bashrc
+source /etc/skel/.bashrc
+
+5 -
+apt-get upgrade -y
+tail /var/log/apt/history.log > history2
+
+6 -
+touch file1
+chmod -v 755 file1 | tee chmod_file1
+
+7 - 
+touch file2
+chmod -v a=r,u+x file2 | tee chmod_file2
+
+8 -
+echo "novo_usr:x:500:500:'usuario-novo':/home/novo_usr:/bin/bash" >> /etc/passwd
+echo "novo_usr:x:500:" >> /etc/group
+mkdir /home/novo_usr
+cp /etc/skel/.* /home/novo_usr
+chown -Rf novo_usr /home/novo_usr
+chmod 755 -Rf /home/novo_usr

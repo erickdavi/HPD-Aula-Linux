@@ -1,0 +1,16 @@
+   15  export NEWUSR="Fabricio"
+   16  export USRDIR="/home/$NEWUSR"
+   17  export SHELL="/bin/bash"
+   18  export LASTUID=$(tail -n 1 /etc/passwd | cut -d: -f3)
+   19  export LASTGID=$(tail -n 1 /etc/group | cut -d: -f3)
+   20  export NEWUID=$(($LASTUID+1))
+   21  export NEWGID=$(($LASTGID+1))
+   22  echo "$NEWUSR:x:$NEWUID:$NEWGID::$USRDIR:$SHELL" >> /etc/passwd
+   23  echo "$NEWUSR:x:$NEWGID:" >> /etc/group
+   24  mkdir -p $USRDIR
+   25  cp /etc/skel/.* $USRDIR
+   26  cp /etc/skel/.* $USRDIR -rf
+   27  chown -R $NEWUSR $USRDIR
+   28  chmod 755 $USRDIR
+   29  chfn $NEWUSR
+   30  passwd $NEWUSR

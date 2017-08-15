@@ -1,0 +1,5 @@
+    1  apt-get update
+    2  apt-get install -y bb apache2 python3 python3-pip git-core 
+    3  apt-get upgrade -y
+    4  tail /var/log/apt/history.log > history-apt-log
+    5  cat /var/log/apt/term.log  > term-log

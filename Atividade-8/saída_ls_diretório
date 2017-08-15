@@ -1,0 +1,3 @@
+#Saída do comando ls -lad $USRDIR
+
+drwxr-xr-x 86 fabricio root 4096 Ago 14 23:09 /home/fabricio

@@ -1,0 +1,6 @@
+    1  mkdir Atividade-1
+    2  cd Atividade-1/
+    3  cat /proc/mounts > Discos_montados
+    4  cat /etc/fstab > Saida_fstab
+    5  df -h >Saida_df
+    6  history > Saida_history_atividade-1

@@ -1,0 +1,8 @@
+#Saída do comando ls -la $USRDIR
+
+total 12
+drwxr-xr-x 86 fabricio fabricio   54 Ago 14 22:55 .
+drwxr-xr-x 4 root  root    33 Ago 14 23:08 ..
+-rwxrw-rw- 1 fabricio fabricio  220 Ago 14 21:40 .bash_logout
+-rwxrw-rw- 1 fabricio fabricio 3605 Ago 14 22:53 .bashrc
+-rwxrw-rw- 1 fabricio fabricio  675 Ago 14 21:40 .profile
